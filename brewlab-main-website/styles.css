@@ -1,0 +1,389 @@
+/* 
+Fonts 
+- 'IBM Plex Sans', sans-serif;
+- 'Poppins', sans-serif
+*/
+/*  
+Colors
+
+*/
+
+/* General */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid,
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.container-none {
+    width: 1371px;
+    height: 561px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1080px;
+  }
+}
+
+.container-fluid-bundle {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 570px) {
+    .container-fluid-bundle {
+        width: 570px;
+    }
+}
+
+/* Navbar */
+#navbar a.navbar-brand {
+  font-weight: 600;
+}
+
+/* -------- Landing Page -------- */
+/* Hero Section */
+#hero {
+  background-image: url(./images/hero-brewlab.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#hero h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  #hero {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero h2 {
+    font-size: x-large;
+  }
+}
+
+#bundle {
+  background-image: url(./images/BUNDLES-BANNER-RESIZE.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#bundle h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  #bundle {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #bundle h2 {
+    font-size: x-large;
+  }
+}
+
+#bundles-banner {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content */
+.scrollableRow {
+  overflow-x: auto;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.scrollableRow > [class*="col-"] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.scrollableRow .filler {
+  min-width: 18px;
+}
+
+.aspectRatioBox {
+  padding-top: calc(2 / 3 * 100%); /* aspect ratio 3:2 */
+  background-size: cover;
+  background-position: center;
+}
+
+/* @media (max-width: 767px) {
+  .headings h3 {
+    font-size: 18px;
+  }
+} */
+
+/* Content Cards */
+
+#content-cards .cards {
+  height: 20%;
+}
+
+/* @media (max-width: 575px) {
+  #content-cards .card {
+    height: 30vh;
+  }
+} */
+
+/* Footer */
+
+.footerNav h5,
+.footerNav a {
+  font-size: 14px;
+}
+.footerNav h5 {
+  line-height: 18px;
+}
+.footerNav .social {
+  font-size: 18px;
+  height: 18px;
+}
+.footerBar small {
+  font-size: 14px;
+}
+
+/* -------- The Lab -------- */
+/* Hero Section */
+#heroshop {
+  background-image: url(./images/hero-shop.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#heroshop h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+.card-body p {
+  font-size: small;
+}
+
+@media (min-width: 1200px) {
+  #heroshop {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #heroshop h2 {
+    font-size: x-large;
+  }
+}
+
+/* -------- The Lab -------- */
+/* Hero Section */
+#herolab {
+  background-image: url(./images/hero-lab.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#herolab h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+.card-body p {
+  font-size: small;
+}
+
+.card {
+  height: 95%;
+}
+
+@media (min-width: 1200px) {
+  #herolab {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #herolab h2 {
+    font-size: x-large;
+  }
+}
+
+/* Content */
+
+/* -------- About Us -------- */
+/* Hero Section */
+#heroabout {
+  background-image: url(./images/hero-about.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#heroabout h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  #heroabout {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #heroabout h2 {
+    font-size: x-large;
+  }
+}
+
+/* Founders section */
+#founders img {
+  width: 140px;
+  height: 140px;
+}
+
+@media (max-width: 400px) {
+  #founders img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* -------- FAQS -------- */
+/* Hero Section */
+#herofaq {
+  background-image: url(./images/hero-faq.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#herofaq h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  #herofaq {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #herofaq h2 {
+    font-size: x-large;
+  }
+}
+
+/* -------- Shop -------- */
+.shop { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buttonshop {
+  background-color: #f0ad4e;
+  border: none;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.buttonshop:hover {opacity: 1}
+span>a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #ffaf4d;
+} 
+
+/* Main Kits */
+
+.kits {
+  display: flex;
+  flex-direction: row;
+}
+
+.shopify__kits {
+  margin-right: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.shopify__kits--1,
+.shopify__kits--2,
+.shopify__kits--3 {
+  padding-top: 10px;
+}
+
+.shopify img {
+  width: 100%;
+  display: block;
+}
+
+/* Ingredient Kits */
+
+.kits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.shopify__kits {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.shopify__kits--1,
+.shopify__kits--2,
+.shopify__kits--3 {
+  padding-top: 10px;
+}
+
+.buy-button img {
+  width: 100%;
+  display: block;
+}

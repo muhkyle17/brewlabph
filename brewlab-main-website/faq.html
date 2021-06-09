@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BREW LAB</title>
+  <link rel="icon" href="./images/webicon.jpg" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header class="header pt-10">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100" id="navbar" style="background-color: black;">
+      <a class="navbar-brand" href="index.html">BREW LAB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="shop.html">The Shop</a>
+          <div class="btn-group">
+            <a class="nav-item nav-link pr-lg-0 pr-1" href="lab.html">The Lab</a>
+            <a class="nav-item nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="lab.html#bp">Beginner's Page</a>
+              <a class="dropdown-item" href="lab.html#recipes">Recipes</a>
+            </div>
+          </div>
+          <a class="nav-item nav-link" href="about.html">About Us</a>
+          <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+          <a class="nav-item nav-link" href="faq.html">FAQs</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="jumbotron text-center mt-5" id="herofaq">
+    <div class="container-fluid">
+      <h1 class="pb-3 pb-sm-4 text-white display-2">FAQs</h1>
+      <h2 class="pb-3 pb-sm-4 text-white"> Have a question? Check our FAQs below.</h2>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section>
+    <div class="container-fluid">
+      <div class="pt-3 pt-lg-4 headings text-center">
+        <h3 class="">What is BREW LAB?</h3>
+        <p>BREW LAB is your brewing partner – we provide simple home beer brewing products with a dedicated space to learn the beer brewing craft to ensure a fun, seamless beer brewing experience.</p>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+      <div class="pt-3 pt-lg-4 headings">
+        <h3>Ordering Products</h3>
+      </div>
+
+      <div class="accordion shadow" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How do I order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              You can order our products by adding items to your cart and checking-out.
+              <ol>
+                <li>On the header menu, click on The Shop.</li>
+                <li>We offer complete beginner Bundles as well as Individual Kits to match your brewing needs. Choose your items and the quantity for each item.</li>
+                <li>Click Next and go through the pages. Your selections will be consolidated at the end of the form.</li>
+                <li>Once you’ve selected all the items you want to purchase, navigate to the end of the form.</li>
+                <li>Fill out your personal information, contact details, and delivery address. Click Next.</li>
+                <li>Read our terms and conditions, tick the box if you agree, and then click Submit.</li>
+                <li>You’ll receive an email with your order confirmation, delivery details, and payment details.
+                </li>
+                <li>BREW LAB currently accepts bank transfers. Our bank details will be sent in the order confirmation email. Transfer the correct amount and reply back with a proof of payment.
+                </li>
+                <li>We’ll confirm your order and set your delivery date.</li>
+                <li>Receive your order on the delivery date and start brewing!</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Can I order in bulk?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Definitely. Email us at <a href="mailto:purchasing@brewlab.ph">purchasing@brewlab.ph</a> for inquiries.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                How do I pay for my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              We currently accept online bank transfer as payment methods. Our bank details will be sent to you via email once you complete your order. 
+              <br>
+              Paying via bank transfer:
+              <ul>
+                <li>Order your items normally through any of the two ways described above.</li>
+                <li>Upon verification, our team will provide you with the account details.</li>
+                <li>Transfer your payment to the account given</li>
+                <li>Send a picture of your proof of payment to hello@brewlab.ph.</li>
+                <li>Receive your order without any cashout.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                How would I know if my order went through?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              You will receive an order confirmation email from BREW LAB. When your order is being processed, our team will email you to verify your order. If you do not receive a confirmation email or text from BREW LAB within 48 hours, contact us at  <a href="mailto:orders@brewlab.ph">orders@brewlab.ph</a>.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                How long does it take to process my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+              When your order is being processed, our team will verify your orders via email. We process orders on weekdays. Orders made during the weekend or in the evenings are processed on the next working day. Once processed, you will receive a confirmation email from BREW LAB.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Can I modify my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+              To prevent miscommunications and minimize inaccuracies, orders are considered final upon checkout. For any revisions, please cancel your order by replying “CANCEL ORDER” to the verification email our team will send you and place your corrected order on brewlab.ph.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSeven">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                How do I cancel my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="card-body">
+              You may only cancel your order if it has not yet been shipped. Contact us at <a href="mailto:orders@brewlab.ph">orders@brewlab.ph</a> to confirm the status of your order, and our team will be in touch. If your order can be cancelled, you will receive an order cancellation notification.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingEight">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Can I order for someone else?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="card-body">
+              Definitely. If you want your products to be delivered straight to the person you’re ordering for, input his/her delivery address.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingNine">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Is there a minimum order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+            <div class="card-body">
+              There's no minimum order for delivery. However, shipping will be shouldered by the buyer.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+      <div class="pt-3 pt-lg-4 headings">
+        <h3>Delivery</h3>
+      </div>
+
+      <div class="accordion shadow" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingTen">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                What are the areas covered for delivery? Is there a shipping fee?
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+            <div class="card-body">
+              We currently deliver nationwide. The buyer shoulders the shipping fee.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingEleven">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                Can I pick-up my order from the BREW LAB office?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+            <div class="card-body">
+              Our operations are streamlined to give you a hassle-free delivery experience. Please use our delivery service for your convenience.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwelve">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                When will I receive my order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+            <div class="card-body">
+              Once you complete your order, the BREW LAB team will be in touch to confirm your order and provide you with the delivery details. Your item will be shipped within one (1) week from order confirmation date. For any special requests, please contact <a href="mailto:care@brewlab.ph">care@brewlab.ph</a> and we’ll see what we can do.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThirT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThirT" aria-expanded="false" aria-controls="collapseThirT">
+                What if I'm not at home when the order arrives?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThirT" class="collapse" aria-labelledby="headingThirT" data-parent="#accordionExample">
+            <div class="card-body">
+              Your representative may present a copy of your ID.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+      <div class="pt-3 pt-lg-4 headings">
+        <h3>Brewing Beer</h3>
+      </div>
+
+      <div class="accordion shadow" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingFourT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFourT" aria-expanded="true" aria-controls="collapseFourT">
+                What is beer?
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseFourT" class="collapse" aria-labelledby="headingFourT" data-parent="#accordionExample">
+            <div class="card-body">
+              What is life? Beer is life. Jokes aside, beer is an alcoholic beverage for your enjoyment. It consists of water, malt, hops, and yeast.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFiveT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFiveT" aria-expanded="false" aria-controls="collapseFiveT">
+                Wait, I can brew beer at home?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFiveT" class="collapse" aria-labelledby="headingFiveT" data-parent="#accordionExample">
+            <div class="card-body">
+              Yes, you can. Don’t worry, we were surprised too. Check out the Beginner’s Page at <a href="lab.html">The Lab</a> to see our guide for brewing beer.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSixT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSixT" aria-expanded="false" aria-controls="collapseSixT">
+                Is it safe to brew beer at home?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSixT" class="collapse" aria-labelledby="headingSixT" data-parent="#accordionExample">
+            <div class="card-body">
+              Definitely! As long as you follow the proper sanitization steps, home brewing beer is very safe. Check out <a href="lab.html">The Lab</a> to see our guide to home brewing beer.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSevenT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSevenT" aria-expanded="false" aria-controls="collapseSevenT">
+                What if I don’t like beer?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSevenT" class="collapse" aria-labelledby="headingSevenT" data-parent="#accordionExample">
+            <div class="card-body">
+              That’s fair, we all have different tastes. That being said, beer does come in different shapes and sizes, flavors and profiles, so we hope you find one that suits your taste palate. We’d be happy to help you find that beer. Hit us up. ;)
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingEightT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEightT" aria-expanded="false" aria-controls="collapseEightT">
+                I’d like to learn more about beer/home beer brewing.
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEightT" class="collapse" aria-labelledby="headingEightT" data-parent="#accordionExample">
+            <div class="card-body">
+              We’d love to share our knowledge with you. Check out <a href="lab.html">The Lab</a> to see our guide to beer and  home brewing beer. We’ll constantly be adding educational materials to ensure that your learning journey doesn’t stop!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+      <div class="pt-3 pt-lg-4 headings">
+        <h3>Returns</h3>
+      </div>
+
+      <div class="accordion shadow" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingNineT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseNineT" aria-expanded="true" aria-controls="collapseNineT">
+                What is your return policy?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseNineT" class="collapse" aria-labelledby="headingNineT" data-parent="#accordionExample">
+            <div class="card-body">
+              All products sold on BREW LAB are subject to quality checks by our purchasing, storage, assembly, and delivery teams. Please inspect your order upon delivery. In the unlikely event that your items are damaged upon delivery, contact us at <a href="mailto:care@brewlab.ph">care@brewlab.ph</a> and we’ll get it sorted out for you.
+              <br>
+              On a case-to-case basis, we can process requests to return the items within seven days upon delivery. Please make sure that you keep your delivery receipt and the items you want to return.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwenT">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenT" aria-expanded="false" aria-controls="collapseTwenT">
+                What products will you accept for returns?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwenT" class="collapse" aria-labelledby="headingTwenT" data-parent="#accordionExample">
+            <div class="card-body">
+              We will replace damaged or wrongly delivered products.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTOne">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTOne" aria-expanded="false" aria-controls="collapseTOne">
+                Can I return an item after seven days?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTOne" class="collapse" aria-labelledby="headingTOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Any problems encountered seven days after the delivery may not be accommodated under our Return Policy. We highly encourage you to review and inspect your medicines upon delivery so that our courier could immediately facilitate the return, exchange, or refund request.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTTwo">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTTwo" aria-expanded="false" aria-controls="collapseTTwo">
+                How long is the processing time for returns?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTTwo" class="collapse" aria-labelledby="headingTTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Return orders, if valid, are processed within two to three business days. 
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTThree">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTThree" aria-expanded="false" aria-controls="collapseTThree">
+                What information do you share?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTThree" class="collapse" aria-labelledby="headingTThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Only our team processing your orders have access to your shared information to ensure your orders are properly delivered. We may use anonymized data for analytics to improve our services or collaborate with partners. 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="">
+    <div class="container-fluid">
+      <div class="row pt-5 d-none d-md-flex footerNav">
+        <div class="col-3">
+          <h5 class="mb-3"><a href="index.html" class="text-secondary">BREW LAB</a></h5>
+          <ul class="list-unstyled mb-1">
+            <li><a href="shop.html" class="text-secondary">The Shop</a></li>
+            <li><a href="lab.html" class="text-secondary">The Lab</a></li>
+            <li><a href="about.html" class="text-secondary">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h5 class="mb-3"><a href="lab.html#recipes" class="text-secondary">Recipes</a></h5>
+          <ul class="list-unstyled mb-1">
+            <li><a href="recipe1.html" class="text-secondary">German Hefeweizen</a></li>
+            <li><a href="recipe2.html" class="text-secondary">Belgian Abbey Beer</a></li>
+            <li><a href="recipe3.html" class="text-secondary">English Dry Stout</a></li>
+            <li><a href="recipe4.html" class="text-secondary">India Pale Ale</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h5 class="mb-3 social">
+            <a href="https://www.facebook.com/brewlab.ph"><i class="text-secondary mr-3 fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/brewlab.ph"><i class="text-secondary fab fa-instagram"></i></a>
+          </h5>
+          <ul class="list-unstyled mb-1">
+            <li><a href="faq.html" class="text-secondary">FAQs</a></li>
+            <li><a href="contact.html" class="text-secondary">Contact Us</a></li>
+            <li><a href="terms.html" class="text-secondary">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+        </div>
+      </div>
+      <hr class="d-none d-md-block" />
+      <div class="row justify-content-between align-items-center mb-4 mb-md-5 mt-5 mt-md-0 footerBar">
+        <div class="col-auto">
+          <small class="text-secondary">© BREW LAB PH</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

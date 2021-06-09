@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BREW LAB</title>
+  <link rel="icon" href="./images/webicon.jpg" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="header pt-10">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100" id="navbar" style="background-color: black;">
+      <a class="navbar-brand" href="index.html">BREW LAB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="shop.html">The Shop</a>
+          <div class="btn-group">
+            <a class="nav-item nav-link pr-lg-0 pr-1" href="lab.html">The Lab</a>
+            <a class="nav-item nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="lab.html#bp">Beginner's Page</a>
+              <a class="dropdown-item" href="lab.html#recipes">Recipes</a>
+            </div>
+          </div>
+          <a class="nav-item nav-link" href="about.html">About Us</a>
+          <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+          <a class="nav-item nav-link" href="faq.html">FAQs</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="jumbotron text-center mt-5" id="herolab">
+    <div class="container-fluid">
+      <h1 class="pb-3 pb-sm-4 text-white display-2">THE LAB</h1>
+      <h2 class="pb-3 pb-sm-4 text-white"> Let's get you started on your journey to brew great beer at home.</h2>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section>
+    <div class="container-fluid">
+      <div class="pt-3 pt-lg-4 headings">
+        <h3 class="text-center" id="bp">Beginner's Page</h3>
+        <p>Don’t worry if you’ve never brewed beer or even heard of brewing beer at home, that’s what we’re here for! Here at The Lab, we’re constantly experimenting and creating useful resources to help you with your home brewing. When we got started, no one really had a dedicated and comprehensive guide to brewing and we ended up having to learn from several different sources. We’re hoping this guide can get you started much faster and much easier, because brewing beer at home isn’t as hard as you think.
+        </p>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+      <div class="row pt-3 pt-lg-4">
+        <div class="col-12 col-md-7">
+          <h3 class="featurette-heading">1) Brew Day</h3>
+          <p>The first thing to do is extract sugars from the grains to make a sweet liquid called “wort”. We do this on Brew Day by steeping the grains in heated water and leaving it for a while. Grains add the body and foundational flavors to your beer. Afterwards, the wort has to be boiled while hops are added. The hops we offer come in pellets, and they add bitterness, flavoring, and aroma to your beer. They have really strong aromatic properties, and it’s interesting to see the effects of different types of hops on your beer.</p>
+          <p>After the boil, the beer is cooled down, placed in a large glass jug called a carboy, and yeast is added to your wort. Yeasts are tiny microorganisms that convert the extracted sugars from your wort into alcohol and CO2 in a process we call fermentation. Tl;dr yeast eats sugar from the grains and makes your wort alcoholic (at that point it’s basically flat, non-carbonated beer). We need to ferment our beer for at least two weeks in a dark, dry area.</p>
+        </div>
+        <div class="col-12 col-md-5" id="">
+          <img src="./images/brewday.jpg" alt="" class="img-fluid w-100 h-100 rounded">
+        </div>
+      </div>
+      <hr class="mt-4 mt-xl-5" />
+
+      <div class="row pt-3 pt-lg-4">
+        <div class="col-12 col-md-5" id="">
+          <img src="./images/bottleday.jpg" alt="" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-12 col-md-7">
+          <h3 class="featurette-heading">2) Bottling Day</h3>
+          <p>And now we’re at Bottling Day, where you add a bit more sugar for the yeast to carbonate your beer and transfer the beer into individual bottles. This actually takes quite a bit of equipment, sanitation, and technique, but it’s not as hard as it looks! The beer then bottle conditions for another two weeks, where the yeast further refines it and creates the carbonation that completes your beer.</p>
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+      
+      <div class="row pt-3 pt-lg-4">
+        <div class="col-12 col-md-7">
+          <h3 class="featurette-heading">3) Opening Day</h3>
+          <p>A day before drinking, the bottles should be placed in the refrigerator to chill them down. After four weeks of the process, the beer is finally ready to drink. We strongly recommend pouring it out into a separate glass, taking in the aroma, and of course, thoroughly enjoying your home brewed beer.</p>
+        </div>
+        <div class="col-12 col-md-5" id="">
+          <img src="./images/bundle2.jpg" alt="" class="img-fluid w-100 h-80 rounded">
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+
+      <!-- <div class="pt-3 pt-lg-4 headings">
+        <h3>Tutorial Videos</h3>
+      </div>
+
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P75SvA344QI"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P75SvA344QI"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P75SvA344QI"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      
+      <hr class="mt-4 mt-xl-5" /> -->
+
+      <div class="pt-3 pt-lg-4 headings" id="recipes">
+        <h3>Recipes</h3>
+      </div>
+
+      <div class="row pt-2 flex-nowrap scrollableRow no-gutters">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="aspectRatioBox rounded" style="background-image: url('./images/belg.jpg')">
+            </div>
+            <div class="card-body text-center">
+              <h4>Belgian Abbey Beer</h4>
+              <p>Abbey beers are produced in the styles made famous by Belgian Trappist monks, but are not brewed within a monastery. Abbey beers are dark beers that produce a range of spicy and fruity flavors, many with strong alcohol contents ranging from 6% alcohol by volume (ABV) to 9% ABV. </p>
+                <a href="recipe2.html" type="button" class="btn btn-sm mt-2 btn-warning text-black">View Recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="aspectRatioBox rounded" style="background-image: url('./images/hefe.jpg')">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="text-center">German Hefeweizen</h4>
+              <p class="">Hefeweizen beers, from Germany are a type of beer that is made up of more than 50% wheat. These beers are sweet and fruity, and have hints of banana and clove flavors. Due to the wheat, it is a rather heavy beer and has a full body with high carbonation.</p>
+                <a href="recipe1.html" type="button" class="btn btn-sm mt-4 btn-warning text-black">View Recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="aspectRatioBox rounded" style="background-image: url('./images/ENG.jpg')">
+            </div>
+            <div class="card-body text-center">
+              <h4>English Dry Stout</h4>
+              <p>Stouts are dark beers made using roasted malt or roasted barley, hops, water and yeast. Stouts were traditionally the generic term for the strongest or stoutest porters, typically 7% or 8%, produced by a brewery. Dry stouts are dark or rich in color, and often has a roasted or coffee-like taste.</p>
+                <a href="recipe3.html" type="button" class="btn btn-sm mt-2 btn-warning text-black">View Recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="aspectRatioBox rounded" style="background-image: url('./images/ipa.jpeg')">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="ipa">India Pale Ale</h4>
+              <p>The India Pale Ale, or IPA as it's more commonly called, is a beer that is loaded with flavorful hops that contribute to aroma and balanced bitterness. With our IPA recipe, we've included hops that make your beer light and floral, but with a spicy kick. You'll get an aroma of lavender and lemon thyme.</p>
+                <a href="recipe4.html" type="button" class="btn btn-sm mt-1 btn-warning text-black">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-4 mt-xl-5" />
+  </section>
+
+
+    <!-- Footer -->
+    <footer class="">
+      <div class="container-fluid">
+        <div class="row pt-5 d-none d-md-flex footerNav">
+          <div class="col-3">
+            <h5 class="mb-3"><a href="index.html" class="text-secondary">BREW LAB</a></h5>
+            <ul class="list-unstyled mb-1">
+              <li><a href="shop.html" class="text-secondary">The Shop</a></li>
+              <li><a href="lab.html" class="text-secondary">The Lab</a></li>
+              <li><a href="about.html" class="text-secondary">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5 class="mb-3"><a href="lab.html#recipes" class="text-secondary">Recipes</a></h5>
+            <ul class="list-unstyled mb-1">
+              <li><a href="recipe1.html" class="text-secondary">German Hefeweizen</a></li>
+              <li><a href="recipe2.html" class="text-secondary">Belgian Abbey Beer</a></li>
+              <li><a href="recipe3.html" class="text-secondary">English Dry Stout</a></li>
+              <li><a href="recipe4.html" class="text-secondary">India Pale Ale</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5 class="mb-3 social">
+              <a href="https://www.facebook.com/brewlab.ph"><i class="text-secondary mr-3 fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/brewlab.ph"><i class="text-secondary fab fa-instagram"></i></a>
+            </h5>
+            <ul class="list-unstyled mb-1">
+              <li><a href="faq.html" class="text-secondary">FAQs</a></li>
+              <li><a href="contact.html" class="text-secondary">Contact Us</a></li>
+              <li><a href="terms.html" class="text-secondary">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+          </div>
+        </div>
+        <hr class="d-none d-md-block" />
+        <div class="row justify-content-between align-items-center mb-4 mb-md-5 mt-5 mt-md-0 footerBar">
+          <div class="col-auto">
+            <small class="text-secondary">© BREW LAB PH</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
