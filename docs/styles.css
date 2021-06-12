@@ -305,7 +305,9 @@ p {
   }
 }
 
-/* -------- Shop -------- */
+/* ---------------------------------------------- */
+/* SHOP */
+/* ---------------------------------------------- */
 .shop { 
   margin: 0;
   padding: 0;
@@ -379,7 +381,8 @@ span>a:hover {
 
 .shopify__kits--1,
 .shopify__kits--2,
-.shopify__kits--3 {
+.shopify__kits--3,
+.shopify__kits--4 {
   padding-top: 10px;
 }
 
