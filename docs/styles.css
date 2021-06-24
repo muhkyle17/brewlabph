@@ -317,6 +317,8 @@ p {
 .shop-heading {
   font-size: 30px;
   margin-bottom: 15px;
+  /* border-bottom: 4px solid #f0ad4e;
+  width: max-content; */
 }
 
 .shop-section {
