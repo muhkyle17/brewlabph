@@ -172,37 +172,6 @@ p {
 
 /* -------- The Lab -------- */
 /* Hero Section */
-#heroshop {
-  background-image: url(./images/hero-shop.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  text-align: center;
-}
-
-#heroshop h1 {
-  padding-top: 150px;
-  font-weight: 600;
-}
-
-.card-body p {
-  font-size: small;
-}
-
-@media (min-width: 1200px) {
-  #heroshop {
-    height: 90vh;
-    min-height: 650px;
-  }
-}
-
-@media (max-width: 575px) {
-  #heroshop h2 {
-    font-size: x-large;
-  }
-}
-
-/* -------- The Lab -------- */
-/* Hero Section */
 #herolab {
   background-image: url(./images/hero-lab.jpg);
   background-size: cover;
@@ -233,6 +202,13 @@ p {
 @media (max-width: 575px) {
   #herolab h2 {
     font-size: x-large;
+  }
+}
+
+@media (max-width: 575px) {
+  .flex-small-screen {
+    flex-direction: column;
+    border: 2px solid yellowgreen;
   }
 }
 
