@@ -24,12 +24,12 @@ p {
 }
 
 .container-none {
-    width: 1371px;
-    height: 561px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  width: 1371px;
+  height: 561px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 @media (min-width: 1200px) {
@@ -39,14 +39,14 @@ p {
 }
 
 .container-fluid-bundle {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 @media (max-width: 570px) {
-    .container-fluid-bundle {
-        width: 570px;
-    }
+  .container-fluid-bundle {
+    width: 570px;
+  }
 }
 
 /* Navbar */
@@ -107,8 +107,8 @@ p {
 }
 
 #bundles-banner {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Content */
@@ -284,7 +284,37 @@ p {
 /* ---------------------------------------------- */
 /* SHOP */
 /* ---------------------------------------------- */
-.shop { 
+/* Hero Section */
+#heroshop {
+  background-image: url(./images/hero-shop.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+#heroshop h1 {
+  padding-top: 150px;
+  font-weight: 600;
+}
+
+.card-body p {
+  font-size: small;
+}
+
+@media (min-width: 1200px) {
+  #heroshop {
+    height: 90vh;
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 575px) {
+  #heroshop h2 {
+    font-size: x-large;
+  }
+}
+
+.shop {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -316,20 +346,20 @@ p {
   cursor: pointer;
 }
 
-.buttonshop:hover {opacity: 1}
-span>a:hover {
+.buttonshop:hover {
+  opacity: 1;
+}
+span > a:hover {
   text-decoration: none;
   color: black;
   background-color: #ffaf4d;
-} 
+}
 
 /* Shop Items */
 
 /* Bundles */
 
 .bundles {
-  
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,7 +373,7 @@ span>a:hover {
   width: 100%;
   margin: 0px auto 20px auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -367,8 +397,6 @@ span>a:hover {
 /* Kits */
 
 .kits {
-  
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -382,7 +410,7 @@ span>a:hover {
   width: 470px;
   margin: 0px auto 20px auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -403,11 +431,13 @@ span>a:hover {
   margin-top: 10px;
 }
 
+hr {
+  width: 73.5vw;
+}
+
 /* Ingredient Kits */
 
 .flavors {
-  
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -421,7 +451,7 @@ span>a:hover {
   max-width: 100%;
   margin: 0px auto 20px auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -440,4 +470,115 @@ span>a:hover {
 
 .flavors__main p {
   margin-top: 10px;
+}
+
+/* ---------------------------------------------- */
+/* Individual Products in SHOP */
+/* ---------------------------------------------- */
+
+/* Bundles Product */
+.back-button {
+  margin: 3.75rem 0px 0px 1rem;
+  position:fixed;
+  top: 0;
+  /* width: 100%; */
+
+  /* border: 2px solid yellow; */
+}
+
+
+.bundle-product {
+  margin-top: 8rem;
+  margin-bottom: -1rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  /* border: 2px solid blue; */
+}
+
+.bundle-product img {
+  width: 73.5vw;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.bundle-product h3 {
+  margin-top: 1rem;
+}
+
+.bundle-product h2 {
+  align-self: flex-start;
+  margin-top: 2rem;
+}
+
+.bundle-product hr {
+  width: 73.5vw;
+}
+
+.bundle-product p {
+  /* margin-top: 1rem; */
+}
+
+/* Equipments Kits */
+.beginners-product {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  /* border: 2px solid blue; */
+}
+
+.beginners-product-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  height: 18rem;
+  /* width: 37.7rem; */
+  width: 44vw;
+  padding-left: 2rem;
+
+  /* border: 2px solid purple; */
+}
+
+.beginners-product img {
+  /* width: 30vw; */
+  width: 25rem;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.beginners-product h3 {
+  margin-top: 1rem;
+}
+
+.beginners-product h2 {
+  margin-top: 2rem;
+}
+
+.beginners-product hr {
+  width: 73.5vw;
+}
+
+.beginners-product p {
+  /* margin-top: 1rem; */
 }
