@@ -582,3 +582,60 @@ hr {
 .beginners-product p {
   /* margin-top: 1rem; */
 }
+
+/* Bottles Kits */
+.bottles-product {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  /* border: 2px solid blue; */
+}
+
+.bottles-product-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  height: 24rem;
+  /* width: 37.7rem; */
+  width: 44vw;
+  padding-left: 2rem;
+
+  /* border: 2px solid purple; */
+}
+
+.bottles-product img {
+  /*width: 30vw;
+  */width: 25rem;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.bottles-product h3 {
+  margin-top: 0.5rem;
+}
+
+.bottles-product h2 {
+  margin-top: 2rem;
+}
+
+.bottles-product hr {
+  width: 73.5vw;
+}
+
+.bottles-product p {
+  /* margin-top: 1rem; */
+}
