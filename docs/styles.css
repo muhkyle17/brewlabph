@@ -5,16 +5,22 @@ Fonts
 */
 /*  
 Colors
+#ffa41c -- Amazon button color
+#ffc107 -- Brew Lab Color
 
 */
 
 /* General */
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container-fluid,
@@ -120,7 +126,7 @@ p {
   padding-right: 18px;
 }
 
-.scrollableRow > [class*="col-"] {
+.scrollableRow > [class*='col-'] {
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -332,32 +338,106 @@ p {
 }
 
 .buttonshop {
-  background-color: #f0ad4e;
+  background-color: #ff9500;
   border: none;
+  font-family: Arial;
   color: black;
+  width: 9.5rem;
+  /* width: 152px; */
   padding: 10px 24px;
   text-align: center;
   font-size: 15px;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
   border-radius: 30px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .buttonshop:hover {
   opacity: 1;
-}
-span > a:hover {
   text-decoration: none;
   color: black;
-  background-color: #ffaf4d;
+  /* background-color: #ffaf4d; */
 }
 
 /* Shop Items */
 
+.shop-flex-container {
+  display: flex;
+}
+
+/* Side Menu on Shop */
+.side-menu {
+  width: 15rem;
+  padding-left: 4rem;
+
+  /* border: 2px solid red; */
+}
+
+.side-menu-container {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  /* border: 2px solid black; */
+}
+
+.side-menu a:link,
+.side-menu a:visited {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  /* border-bottom: 2px solid transparent;
+  transition:border-bottom 0.2s;
+  -webkit-transition:border-bottom 0.2s;
+  -moz-transition:border-bottom 0.2s;
+  -ms-transition:border-bottom 0.2s;
+  -o-transition:border-bottom 0.2s; */
+
+  /* border: 2px solid yellow; */
+}
+
+.side-menu a:hover,
+.side-menu a:active {
+  display: block;
+  text-decoration: none;
+  color: black;
+  /* border-bottom: 1px solid black; */
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+}
+
+@media (max-width: 1385px) {
+  .side-menu {
+    display: none;
+  }
+}
+
 /* Bundles */
+
+#bundles::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
 
 .bundles {
   display: flex;
@@ -371,6 +451,7 @@ span > a:hover {
   height: auto;
   /* max-width: 100%; */
   width: 100%;
+  max-width: 1460px;
   margin: 0px auto 20px auto;
   -o-object-fit: cover;
   object-fit: cover;
@@ -396,6 +477,14 @@ span > a:hover {
 
 /* Kits */
 
+#main-kits::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
 .kits {
   display: flex;
   justify-content: space-between;
@@ -403,11 +492,17 @@ span > a:hover {
   flex-wrap: wrap;
 }
 
+@media (max-width: 687px) {
+  .kits {
+    justify-content: center;
+  }
+}
+
 .kits__img {
   /* height: 18rem; */
-  height: 300px;
+  height: 280px;
   /* max-width: 100%; */
-  width: 470px;
+  width: 320px;
   margin: 0px auto 20px auto;
   -o-object-fit: cover;
   object-fit: cover;
@@ -432,26 +527,40 @@ span > a:hover {
 }
 
 hr {
-  width: 73.5vw;
+  max-width: 73.5vw;
 }
 
-/* Ingredient Kits */
+/* Loose Equipment */
 
-.flavors {
+#loose-equipment::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+.loose-equip {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.flavors__img {
+@media (max-width: 687px) {
+  .loose-equip {
+    justify-content: center;
+  }
+}
+
+.loose-equip__img {
   /* width: 100%; */
   /* height: auto; */
-  height: 11rem;
-  max-width: 100%;
+  height: auto;
+  max-width: 15rem;
   margin: 0px auto 20px auto;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -459,48 +568,50 @@ hr {
   -o-border-radius: 5px;
 }
 
-.flavors__main {
+.loose-equip__main {
   text-align: center;
 }
 
-.flavors__main h3 {
+.loose-equip__main h3 {
   margin-top: 5px;
   font-size: 20px;
 }
 
-.flavors__main p {
+.loose-equip__main p {
   margin-top: 10px;
 }
 
 /* ---------------------------------------------- */
-/* Individual Products in SHOP */
+/* Individual Page Products in SHOP */
 /* ---------------------------------------------- */
 
 /* Bundles Product */
 .back-button {
   margin: 3.75rem 0px 0px 1rem;
-  position:fixed;
+  position: fixed;
   top: 0;
   /* width: 100%; */
 
   /* border: 2px solid yellow; */
 }
 
-
 .bundle-product {
   margin-top: 8rem;
-  margin-bottom: -1rem;
-  
+  margin-bottom: 3rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
+
   /* border: 2px solid blue; */
 }
 
 .bundle-product img {
-  width: 73.5vw;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1460px;
+  width: 100%;
   height: auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -510,7 +621,9 @@ hr {
 }
 
 .bundle-product h3 {
-  margin-top: 1rem;
+  align-self: flex-start;
+  margin-bottom: 1.2rem;
+  font-size: 2.5rem;
 }
 
 .bundle-product h2 {
@@ -519,25 +632,74 @@ hr {
 }
 
 .bundle-product hr {
-  width: 73.5vw;
+  width: 100%;
 }
 
-.bundle-product p {
-  /* margin-top: 1rem; */
+.bundles-flavor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bundles-flavor__main {
+  text-align: center;
+}
+
+.bundles-flavor__img {
+  /* width: 100%; */
+  /* height: auto; */
+  height: auto;
+  max-width: 15rem;
+  margin: 0px auto 20px auto;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.bundles-flavor__main h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.bundles-flavor__main p {
+  margin-top: 10px;
+}
+
+.bundles-description h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+}
+
+.bundles-description p {
+  line-height: 1.6rem;
 }
 
 /* Equipments Kits */
 .beginners-product {
   margin-top: 8rem;
   margin-bottom: 3rem;
-  
+
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  
+
   /* border: 2px solid blue; */
+}
+
+@media (max-width: 798px) {
+  .beginners-product {
+    justify-content: center;
+  }
 }
 
 .beginners-product-container {
@@ -548,17 +710,29 @@ hr {
   /* justify-content: center; */
   justify-content: flex-start;
 
-  height: 18rem;
+  max-height: 18rem;
   /* width: 37.7rem; */
-  width: 44vw;
-  padding-left: 2rem;
+  /* width: 40vw; */
+  min-width: 20rem;
+  margin-left: 2rem;
 
   /* border: 2px solid purple; */
+}
+
+@media (max-width: 768px) {
+  .beginners-product-container {
+    align-items: center;
+  }
+
+  .beginners-btn {
+    padding-left: 3rem;
+  }
 }
 
 .beginners-product img {
   /* width: 30vw; */
   width: 25rem;
+  min-width: 10%;
   height: auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -569,6 +743,7 @@ hr {
 
 .beginners-product h3 {
   margin-top: 1rem;
+  font-size: 1.3em;
 }
 
 .beginners-product h2 {
@@ -587,14 +762,18 @@ hr {
 .bottles-product {
   margin-top: 8rem;
   margin-bottom: 3rem;
-  
+
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  
+
   /* border: 2px solid blue; */
+}
+
+@media (max-width: 687px) {
+  .bottles-product {
+    justify-content: center;
+  }
 }
 
 .bottles-product-container {
@@ -605,17 +784,18 @@ hr {
   /* justify-content: center; */
   justify-content: flex-start;
 
-  height: 24rem;
+  /* height: 24rem; */
   /* width: 37.7rem; */
-  width: 44vw;
+  /* width: 44vw; */
   padding-left: 2rem;
 
   /* border: 2px solid purple; */
 }
 
 .bottles-product img {
-  /*width: 30vw;
-  */width: 25rem;
+  /*width: 30vw;*/
+  width: 25rem;
+  min-width: 10%;
   height: auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -638,4 +818,87 @@ hr {
 
 .bottles-product p {
   /* margin-top: 1rem; */
+}
+
+/* Ingredients Kits */
+.flavors_img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0px auto 5rem auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ingredients-header {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ingredients-flavor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ingredients-flavor__main {
+  text-align: center;
+}
+
+.flavors_img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 4rem;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ingredients-flavor__img {
+  /* width: 100%; */
+  /* height: auto; */
+  height: auto;
+  max-width: 15rem;
+  margin: 0px auto 20px auto;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ingredients-flavor__main h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.ingredients-flavor__main p {
+  margin-top: 10px;
+}
+
+.ingredients-description h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* border-bottom: 2px solid black; */
+}
+
+.ingredients-description p {
+  line-height: 1.6rem;
 }
