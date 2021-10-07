@@ -380,6 +380,7 @@ html {
 .side-menu {
   width: 15rem;
   padding-left: 4rem;
+  margin-top: 4.7rem;
 
   /* border: 2px solid red; */
 }
@@ -387,7 +388,7 @@ html {
 .side-menu-container {
   position: sticky;
   position: -webkit-sticky;
-  top: 75px;
+  top: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -530,6 +531,31 @@ hr {
   max-width: 73.5vw;
 }
 
+.labkits-shopify-button {
+  margin: -30px auto 20px auto;
+  opacity: 0.7;
+  width: fit-content;
+  /* height: fit-content; */
+}
+
+.labkits-shopify-button:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}
+
+.loose-equip-shopify-button {
+  margin: -30px auto 20px auto;
+  opacity: 0.7;
+  width: inherit;
+}
+
+.loose-equip-shopify-button:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}
+
 /* Loose Equipment */
 
 #loose-equipment::before {
@@ -543,6 +569,7 @@ hr {
 .loose-equip {
   display: flex;
   justify-content: space-between;
+  /* gap: 1%; */
   align-items: center;
   flex-wrap: wrap;
 }
@@ -554,13 +581,11 @@ hr {
 }
 
 .loose-equip__img {
-  /* width: 100%; */
-  /* height: auto; */
-  height: auto;
+  height: 280px;
+  width: 320px;
   max-width: 15rem;
   margin: 0px auto 20px auto;
-  /* -o-object-fit: cover; */
-  /* object-fit: cover; */
+  object-fit: cover;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -569,6 +594,7 @@ hr {
 }
 
 .loose-equip__main {
+  width: 15rem;
   text-align: center;
 }
 
@@ -595,6 +621,12 @@ hr {
   /* border: 2px solid yellow; */
 }
 
+@media (max-width: 1352px) {
+  .back-button {
+    position: absolute;
+  }
+}
+
 .bundle-product {
   margin-top: 8rem;
   margin-bottom: 3rem;
@@ -602,8 +634,20 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  /* justify-items: center; */
 
   /* border: 2px solid blue; */
+}
+
+.bundle-product h4 {
+  margin: 1rem auto 1rem auto;
+}
+
+.bundle-product-shopify-button {
+  margin: 0 auto -8px auto;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .bundle-product img {
@@ -642,8 +686,10 @@ hr {
   flex-wrap: wrap;
 }
 
-.bundles-flavor__main {
-  text-align: center;
+@media (max-width: 798px) {
+  .bundles-flavor {
+    justify-content: center;
+  }
 }
 
 .bundles-flavor__img {
@@ -674,9 +720,7 @@ hr {
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 0.2rem;
-  width: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  width: inherit;
 }
 
 .bundles-description p {
@@ -717,6 +761,10 @@ hr {
   margin-left: 2rem;
 
   /* border: 2px solid purple; */
+}
+
+.beginners-btn {
+  margin-top: -25px;
 }
 
 @media (max-width: 768px) {
@@ -792,6 +840,20 @@ hr {
   /* border: 2px solid purple; */
 }
 
+.bottles-btn {
+  margin-top: -25px;
+}
+
+@media (max-width: 768px) {
+  .bottles-product-container {
+    align-items: center;
+  }
+
+  .bottles-btn {
+    padding-left: 3rem;
+  }
+}
+
 .bottles-product img {
   /*width: 30vw;*/
   width: 25rem;
@@ -824,7 +886,7 @@ hr {
 .flavors_img {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-width: 20rem;
   margin: 0px auto 5rem auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -834,6 +896,7 @@ hr {
 }
 
 .ingredients-header {
+  margin-top: 130px;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -893,12 +956,14 @@ hr {
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 0.2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: inherit;
   /* border-bottom: 2px solid black; */
 }
 
 .ingredients-description p {
   line-height: 1.6rem;
+}
+
+.ingredients-description strong {
+  font-size: 1.1rem;
 }
