@@ -83,14 +83,6 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <!-- <section class="jumbotron text-center mt-5" id="heroshop">
-    <div class="container-fluid">
-      <h1 class="pb-0 pb-sm-0 text-white display-2">THE SHOP</h1>
-      <h2 class="pb-3 pb-sm-4 mb-4 text-white"> Let's get you started on your journey to brew great beer at home.</h2>    
-    </div>
-  </section> -->
-
     <section>
       <div class="back-button">
         <h1>
@@ -105,51 +97,117 @@
 
     <section
       style="padding-left: 50px; padding-right: 50px"
-      class="product-section container-fluid"
+      class="container-fluid"
     >
-      <div class="beginners-product">
+      <div class="ingredients-product">
         <img
-          src="images/Beginner-Equipment-Kit.jpg"
-          alt="Brew Lab Bundle"
-          class="beginners_img"
+          src="images/asset_shop_ingredientskits.jpg"
+          alt="Ingredients Kit"
+          class="ingredients_img"
         />
-        <div class="beginners-product-container">
-          <h3>Beginner's Equipment Kit</h3>
-          <p>₱3,500.00 per Kit</p>
-          <div class="beginners-btn" id="product-component-1633586699072"></div>
+        <div class="ingredients-product-container">
+          <h3>Ingredients Kit</h3>
+          <p>₱550.00 per Kit</p>
+          <div
+            class="ingredients-btn"
+            id="product-component-1633591747773"
+          ></div>
         </div>
       </div>
 
-      <div>
+      <div class="ingredients-description">
         <h1>Product Details</h1>
         <hr />
         <p>
-          The Beginner’s Equipment Kit comes complete with supplies for
-          sanitation, brewing, and fermenting your beer. The kit is a one-time
-          purchase that will give you the tools to brew many batches of beer at
-          home.
+          Our Ingredients Kits come complete with all the ingredients needed to
+          brew a 1-gallon batch of beer (roughly 8-10 330mL bottles). Each kit
+          includes base malts, specialty malts, hops, yeast, priming sugar, and
+          bottle caps. All ingredients are pre-measured and separately packed to
+          ensure an easy brewing experience.
         </p>
-        <p>We’ve included the following:</p>
-
-        <ul>
-          <li>1-gallon glass carboy (a perfect fermenter for beginners)</li>
-          <li>
-            A specially designed cap and airlock (no need to fuss over a
-            slippery rubber stopper)
-          </li>
-          <li>Auto-siphon + tube</li>
-          <li>Bottle filler</li>
-          <li>Digital thermometer</li>
-          <li>Mesh Brew-in-a-Bag (BIAB)</li>
-          <li>StellarSan (a homebrewer’s best friend - non-rinse sanitizer)</li>
-          <li>Sodium percarbonate (perfect for easy cleaning!)</li>
-        </ul>
-
         <p>
-          Every time you want to brew a new batch o beer, all you’ll need to do
-          is refill your ingredients. Since beer style is largely dependent on
-          the ingredients and technique, this kit can be used to brew most, if
-          not all, styles of beer!
+          Once you have the necessary equipment (if you got a Beginner’s
+          Equipment Kit, you’re good to go), these Ingredients Kits serve as
+          refills for each succeeding batch of beer you want to brew.
+        </p>
+        <p>As of May 2021, we have four beer styles available:</p>
+        <ul>
+          <li>Belgian Abbey Beer</li>
+          <li>German Hefeweizen</li>
+          <li>English Dry Stout</li>
+          <li>India Pale Ale (our newest flavor)</li>
+        </ul>
+        <p>
+          <strong>NOTE:</strong> You need a whole bundle kit to be able to brew
+          your beer [Get exact wording from team]
+        </p>
+
+        <div>
+          <h1 style="margin-top: 3rem; margin-bottom: 1rem">Flavors</h1>
+          <div class="bundles-flavor">
+            <div>
+              <img src="images/belg.jpg"" alt="Belgian Abbey Beer"
+              class="bundles-flavor__img">
+            </div>
+
+            <div>
+              <img
+                src="images/hefe.jpg"
+                alt="German Hefeweizen"
+                class="bundles-flavor__img"
+              />
+            </div>
+
+            <div>
+              <img
+                src="images/ENG.jpg"
+                alt="English Dry Stout"
+                class="bundles-flavor__img"
+              />
+            </div>
+
+            <div>
+              <img
+                src="images/ipa.jpeg"
+                alt="India Pale Ale"
+                class="bundles-flavor__img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <h5>Belgian Abbey Beer</h5>
+        <p>
+          Abbey beers are produced in the styles made famous by Belgian Trappist
+          monks, but are not brewed within a monastery. Abbey beers produce a
+          range of spicy and fruity flavors, many with strong alcohol contents
+          ranging from 6% to 9% alcohol by volume (ABV).
+        </p>
+        <hr />
+        <h5>German Hefeweizen</h5>
+        <p>
+          Hefeweizen beers are a type of beer that is made up of at least 50%
+          wheat. These beers are sweet and fruity, and have hints of banana and
+          clove flavors. Due to the wheat, it is a rather heavy beer and has a
+          full body with high carbonation.
+        </p>
+        <hr />
+        <h5>English Dry Stout</h5>
+        <p>
+          Stouts are dark beers made using roasted malt or roasted barley, hops,
+          water and yeast. Stouts were traditionally the generic term for the
+          strongest or "stoutest" porters produced by a brewery - typically 7%
+          or 8% alcohol by volume (ABV). Dry stouts are dark and rich in color,
+          and often have a roasted coffee-like taste.
+        </p>
+        <hr />
+        <h5>India Pale Ale</h5>
+        <p>
+          India Pale Ales (IPAs) are a style of beer that uses significantly
+          more hops than other ales. The additional hop content provides a ton
+          of aromatics balanced with a kick of bitterness, creating a
+          refreshingly spicy and citrusy beer. Our IPA will give you a beer
+          between 7-8% alcohol by volume (ABV).
         </p>
       </div>
     </section>
@@ -284,8 +342,8 @@
           });
           ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
-              id: '6690900672670',
-              node: document.getElementById('product-component-1633586699072'),
+              id: '7005879926942',
+              node: document.getElementById('product-component-1633591747773'),
               moneyFormat: '%E2%82%B1%7B%7Bamount%7D%7D',
               options: {
                 product: {
