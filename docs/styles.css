@@ -55,6 +55,10 @@ html {
   }
 }
 
+p {
+  -webkit-font-smoothing: antialiased;
+}
+
 /* Navbar */
 #navbar a.navbar-brand {
   font-weight: 600;
@@ -944,5 +948,6 @@ hr {
 }
 
 .ingredients-description strong {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
