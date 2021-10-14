@@ -536,25 +536,13 @@ hr {
 }
 
 .labkits-shopify-button {
-  margin: -30px auto 20px auto;
+  margin: -30px auto -3px auto;
   opacity: 0.7;
   width: fit-content;
   /* height: fit-content; */
 }
 
 .labkits-shopify-button:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: black;
-}
-
-.loose-equip-shopify-button {
-  margin: -30px auto 20px auto;
-  opacity: 0.7;
-  width: inherit;
-}
-
-.loose-equip-shopify-button:hover {
   opacity: 1;
   text-decoration: none;
   color: black;
@@ -585,11 +573,11 @@ hr {
 }
 
 .loose-equip__img {
-  height: 280px;
+  height: 250px;
   width: 320px;
   max-width: 15rem;
   margin: 0px auto 20px auto;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -609,6 +597,18 @@ hr {
 
 .loose-equip__main p {
   margin-top: 10px;
+}
+
+.loose-equip-shopify-button {
+  margin: -20px auto -3px auto;
+  opacity: 0.7;
+  width: inherit;
+}
+
+.loose-equip-shopify-button:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: black;
 }
 
 /* ---------------------------------------------- */
@@ -950,4 +950,304 @@ hr {
 .ingredients-description strong {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* Carboy Product */
+
+.carboy-product {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  /* border: 2px solid blue; */
+}
+
+@media (max-width: 798px) {
+  .carboy-product {
+    justify-content: center;
+  }
+}
+
+.carboy-product-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  max-height: 18rem;
+  /* width: 37.7rem; */
+  /* width: 40vw; */
+  min-width: 20rem;
+  margin-left: 2rem;
+
+  /* border: 2px solid purple; */
+}
+
+.carboy-btn {
+  margin-top: -25px;
+}
+
+@media (max-width: 768px) {
+  .carboy-product-container {
+    align-items: center;
+  }
+
+  .carboy-btn {
+    padding-left: 3rem;
+  }
+}
+
+.carboy-product img {
+  /* width: 30vw; */
+  width: 25rem;
+  min-width: 10%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.carboy-product h3 {
+  margin-top: 1rem;
+}
+
+.carboy-product h2 {
+  margin-top: 2rem;
+}
+
+.carboy-product hr {
+  width: 73.5vw;
+}
+
+/* Auto-Siphon and Bottle Filler Product */
+
+.siphon-product {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  /* border: 2px solid blue; */
+}
+
+@media (max-width: 798px) {
+  .siphon-product {
+    justify-content: center;
+  }
+}
+
+.siphon-product-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  max-height: 18rem;
+  /* width: 37.7rem; */
+  /* width: 40vw; */
+  min-width: 20rem;
+  margin-left: 2rem;
+
+  /* border: 2px solid purple; */
+}
+
+.siphon-btn {
+  margin-top: -25px;
+}
+
+@media (max-width: 768px) {
+  .siphon-product-container {
+    align-items: center;
+  }
+
+  .siphon-btn {
+    padding-left: 3rem;
+  }
+}
+
+.siphon-product img {
+  /* width: 30vw; */
+  width: 25rem;
+  min-width: 10%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.siphon-product h3 {
+  margin-top: 1rem;
+}
+
+.siphon-product h2 {
+  margin-top: 2rem;
+}
+
+.siphon-product hr {
+  width: 73.5vw;
+}
+
+/* BIAB Product */
+
+.biab-product {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  /* border: 2px solid blue; */
+}
+
+@media (max-width: 798px) {
+  .biab-product {
+    justify-content: center;
+  }
+}
+
+.biab-product-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  max-height: 18rem;
+  /* width: 37.7rem; */
+  /* width: 40vw; */
+  min-width: 20rem;
+  margin-left: 2rem;
+
+  /* border: 2px solid purple; */
+}
+
+.biab-btn {
+  margin-top: -25px;
+}
+
+@media (max-width: 768px) {
+  .biab-product-container {
+    align-items: center;
+  }
+
+  .biab-btn {
+    padding-left: 3rem;
+  }
+}
+
+.biab-product img {
+  /* width: 30vw; */
+  width: 25rem;
+  min-width: 10%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.biab-product h3 {
+  margin-top: 1rem;
+}
+
+.biab-product h2 {
+  margin-top: 2rem;
+}
+
+.biab-product hr {
+  width: 73.5vw;
+}
+
+/* Stellar San Product */
+
+.stellar-product {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  /* border: 2px solid blue; */
+}
+
+@media (max-width: 798px) {
+  .stellar-product {
+    justify-content: center;
+  }
+}
+
+.stellar-product-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  max-height: 18rem;
+  /* width: 37.7rem; */
+  /* width: 40vw; */
+  min-width: 20rem;
+  margin-left: 2rem;
+
+  /* border: 2px solid purple; */
+}
+
+.stellar-btn {
+  margin-top: -25px;
+}
+
+@media (max-width: 768px) {
+  .stellar-product-container {
+    align-items: center;
+  }
+
+  .stellar-btn {
+    padding-left: 3rem;
+  }
+}
+
+.stellar-product img {
+  /* width: 30vw; */
+  width: 25rem;
+  min-width: 10%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.stellar-product h3 {
+  margin-top: 1rem;
+}
+
+.stellar-product h2 {
+  margin-top: 2rem;
+}
+
+.stellar-product hr {
+  width: 73.5vw;
 }

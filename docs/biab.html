@@ -107,49 +107,26 @@
       style="padding-left: 50px; padding-right: 50px"
       class="product-section container-fluid"
     >
-      <div class="beginners-product">
+      <div class="biab-product">
         <img
           src="images/asset_shop_BIAB.jpg"
-          alt="Brew Lab Bundle"
-          class="beginners_img"
+          alt="Brew in a Bag"
+          class="biab_img"
         />
-        <div class="beginners-product-container">
+        <div class="biab-product-container">
           <h3>Brew-in-a-Bag</h3>
-          <p>₱0,000.00 per Kit</p>
-          <div class="beginners-btn" id="product-component-1633586699072"></div>
+          <p>₱150.00 per Kit</p>
+          <div class="biab-btn" id="product-component-1634196069469"></div>
         </div>
       </div>
 
       <div>
-        <h1>Product Details</h1>
+        <h3>Product Details</h3>
         <hr />
         <p>
-          The Beginner’s Equipment Kit comes complete with supplies for
-          sanitation, brewing, and fermenting your beer. The kit is a one-time
-          purchase that will give you the tools to brew many batches of beer at
-          home.
-        </p>
-        <p>We’ve included the following:</p>
-
-        <ul>
-          <li>1-gallon glass carboy (a perfect fermenter for beginners)</li>
-          <li>
-            A specially designed cap and airlock (no need to fuss over a
-            slippery rubber stopper)
-          </li>
-          <li>Auto-siphon + tube</li>
-          <li>Bottle filler</li>
-          <li>Digital thermometer</li>
-          <li>Mesh Brew-in-a-Bag (BIAB)</li>
-          <li>StellarSan (a homebrewer’s best friend - non-rinse sanitizer)</li>
-          <li>Sodium percarbonate (perfect for easy cleaning!)</li>
-        </ul>
-
-        <p>
-          Every time you want to brew a new batch o beer, all you’ll need to do
-          is refill your ingredients. Since beer style is largely dependent on
-          the ingredients and technique, this kit can be used to brew most, if
-          not all, styles of beer!
+          A mesh bag used to hold grains during the mash on Brew Day. Using a
+          bag makes it a lot easier to remove grains from your pot and removes
+          the need for straining.
         </p>
       </div>
     </section>
@@ -252,5 +229,310 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL =
+          'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (
+            document.getElementsByTagName('head')[0] ||
+            document.getElementsByTagName('body')[0]
+          ).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'brew-lab-philippines.myshopify.com',
+            storefrontAccessToken: '4c2b3f5c77f179fb8922fba7f688cbcc',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+              id: '6690902769822',
+              node: document.getElementById('product-component-1634196069469'),
+              moneyFormat: '%E2%82%B1%7B%7Bamount%7D%7D',
+              options: {
+                product: {
+                  styles: {
+                    product: {
+                      '@media (min-width: 601px)': {
+                        'max-width': 'calc(25% - 20px)',
+                        'margin-left': '20px',
+                        'margin-bottom': '50px',
+                      },
+                      'text-align': 'left',
+                    },
+                    title: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      'font-weight': 'normal',
+                      color: '#000000',
+                    },
+                    button: {
+                      'font-family': 'Arial, sans-serif',
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                        'background-color': '#e6b000',
+                      },
+                      'background-color': '#ffc300',
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                      'border-radius': '30px',
+                    },
+                    price: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                    compareAt: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                    unitPrice: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                    description: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                  },
+                  contents: {
+                    img: false,
+                    title: false,
+                    price: false,
+                  },
+                  text: {
+                    button: 'Add to cart',
+                  },
+                  googleFonts: ['Droid Sans'],
+                },
+                productSet: {
+                  styles: {
+                    products: {
+                      '@media (min-width: 601px)': {
+                        'margin-left': '-20px',
+                      },
+                    },
+                  },
+                },
+                modalProduct: {
+                  contents: {
+                    img: false,
+                    imgWithCarousel: true,
+                    button: false,
+                    buttonWithQuantity: true,
+                  },
+                  styles: {
+                    product: {
+                      '@media (min-width: 601px)': {
+                        'max-width': '100%',
+                        'margin-left': '0px',
+                        'margin-bottom': '0px',
+                      },
+                    },
+                    button: {
+                      'font-family': 'Arial, sans-serif',
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                        'background-color': '#e6b000',
+                      },
+                      'background-color': '#ffc300',
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                      'border-radius': '30px',
+                    },
+                    title: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'bold',
+                      'font-size': '26px',
+                      color: '#4c4c4c',
+                    },
+                    price: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '18px',
+                      color: '#4c4c4c',
+                    },
+                    compareAt: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '15.299999999999999px',
+                      color: '#4c4c4c',
+                    },
+                    unitPrice: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '15.299999999999999px',
+                      color: '#4c4c4c',
+                    },
+                    description: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '14px',
+                      color: '#4c4c4c',
+                    },
+                  },
+                  text: {
+                    button: 'Add to cart',
+                  },
+                },
+                option: {},
+                cart: {
+                  styles: {
+                    button: {
+                      'font-family': 'Arial, sans-serif',
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                        'background-color': '#e6b000',
+                      },
+                      'background-color': '#ffc300',
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                      'border-radius': '30px',
+                    },
+                    title: {
+                      color: '#000000',
+                    },
+                    header: {
+                      color: '#000000',
+                    },
+                    lineItems: {
+                      color: '#000000',
+                    },
+                    subtotalText: {
+                      color: '#000000',
+                    },
+                    subtotal: {
+                      color: '#000000',
+                    },
+                    notice: {
+                      color: '#000000',
+                    },
+                    currency: {
+                      color: '#000000',
+                    },
+                    close: {
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                      },
+                    },
+                    empty: {
+                      color: '#000000',
+                    },
+                    noteDescription: {
+                      color: '#000000',
+                    },
+                    discountText: {
+                      color: '#000000',
+                    },
+                    discountIcon: {
+                      fill: '#000000',
+                    },
+                    discountAmount: {
+                      color: '#000000',
+                    },
+                    cart: {
+                      'background-color': '#f3f3f3',
+                    },
+                    footer: {
+                      'background-color': '#f3f3f3',
+                    },
+                  },
+                  text: {
+                    total: 'Subtotal',
+                    notice: '',
+                    button: 'Checkout',
+                    noteDescription: 'Special instructions for the seller',
+                  },
+                  contents: {
+                    note: true,
+                  },
+                  popup: false,
+                },
+                toggle: {
+                  styles: {
+                    toggle: {
+                      'font-family': 'Arial, sans-serif',
+                      'background-color': '#ffc300',
+                      ':hover': {
+                        'background-color': '#e6b000',
+                      },
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                    },
+                    count: {
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                      },
+                    },
+                    iconPath: {
+                      fill: '#000000',
+                    },
+                  },
+                },
+                lineItem: {
+                  styles: {
+                    variantTitle: {
+                      color: '#000000',
+                    },
+                    title: {
+                      color: '#000000',
+                    },
+                    price: {
+                      color: '#000000',
+                    },
+                    fullPrice: {
+                      color: '#000000',
+                    },
+                    discount: {
+                      color: '#000000',
+                    },
+                    discountIcon: {
+                      fill: '#000000',
+                    },
+                    quantity: {
+                      color: '#000000',
+                    },
+                    quantityIncrement: {
+                      color: '#000000',
+                      'border-color': '#000000',
+                    },
+                    quantityDecrement: {
+                      color: '#000000',
+                      'border-color': '#000000',
+                    },
+                    quantityInput: {
+                      color: '#000000',
+                      'border-color': '#000000',
+                    },
+                  },
+                },
+              },
+            });
+          });
+        }
+      })();
+      /*]]>*/
+    </script>
   </body>
 </html>
