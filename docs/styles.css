@@ -620,9 +620,6 @@ hr {
   margin: 3.75rem 0px 0px 1rem;
   position: fixed;
   top: 0;
-  /* width: 100%; */
-
-  /* border: 2px solid yellow; */
 }
 
 @media (max-width: 1352px) {
@@ -638,10 +635,6 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* justify-items: center; */
-
-  /* border: 2px solid blue; */
 }
 
 .bundle-product h4 {
@@ -742,45 +735,21 @@ hr {
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .beginners-product {
-    justify-content: center;
-  }
-}
-
 .beginners-product-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   align-items: flex-start;
-  /* justify-content: center; */
   justify-content: flex-start;
-
   max-height: 18rem;
-  /* width: 37.7rem; */
-  /* width: 40vw; */
   min-width: 20rem;
   margin-left: 2rem;
-
-  /* border: 2px solid purple; */
 }
 
 .beginners-btn {
   margin-top: -25px;
 }
 
-@media (max-width: 768px) {
-  .beginners-product-container {
-    align-items: center;
-  }
-
-  .beginners-btn {
-    padding-left: 3rem;
-  }
-}
-
 .beginners-product img {
-  /* width: 30vw; */
   width: 25rem;
   min-width: 10%;
   height: auto;
@@ -803,6 +772,21 @@ hr {
   width: 73.5vw;
 }
 
+@media (max-width: 866px) {
+  .beginners-product {
+    justify-content: center;
+  }
+
+  .beginners-product-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .beginners-btn {
+    padding-left: 3.7rem;
+  }
+}
+
 /* Bottles Kits */
 .bottles-product {
   margin-top: 8rem;
@@ -811,64 +795,23 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  /* border: 2px solid blue; */
-}
-
-@media (max-width: 768px) {
-  .bottles-product {
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .bottles-product-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   align-items: flex-start;
-  /* justify-content: center; */
   justify-content: flex-start;
-
-  /* height: 24rem; */
-  /* width: 37.7rem; */
-  /* width: 44vw; */
   padding-left: 2rem;
-
-  /* border: 2px solid purple; */
 }
 
 .bottles-btn {
   margin-top: -25px;
-  width: inherit;
-}
-
-@media (max-width: 768px) {
-  .bottles-product-container {
-    align-items: center;
-  }
-
-  .bottles-btn {
-    padding-left: 3.7rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .bottles-btn {
-    padding-left: 2.3rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .bottles-btn {
-    padding-left: 10px;
-  }
 }
 
 .bottles-product img {
-  /*width: 30vw;*/
   width: 25rem;
-  min-width: 10%;
+  min-width: 200px;
   height: auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -889,7 +832,34 @@ hr {
   width: 73.5vw;
 }
 
+@media (max-width: 826px) {
+  .bottles-product {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottles-product-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottles-btn {
+    padding-left: 3.7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .bottles-product-container {
+    padding-left: 0;
+  }
+
+  .bottles-btn {
+    padding-left: 3.2rem !important;
+  }
+}
+
 /* Ingredients Kits */
+
 .ingredients-product {
   margin-top: 8rem;
   margin-bottom: 3rem;
