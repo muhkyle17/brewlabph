@@ -780,6 +780,7 @@ hr {
   .beginners-product-container {
     align-items: center;
     justify-content: center;
+    margin-left: 0px;
   }
 
   .beginners-btn {
@@ -802,7 +803,9 @@ hr {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: 2rem;
+  max-height: 18rem;
+  min-width: 20rem;
+  margin-left: 2rem;
 }
 
 .bottles-btn {
@@ -841,10 +844,11 @@ hr {
   .bottles-product-container {
     align-items: center;
     justify-content: center;
+    margin-left: 0px;
   }
 
   .bottles-btn {
-    padding-left: 3.7rem;
+    padding-left: 4rem;
   }
 }
 
@@ -854,7 +858,7 @@ hr {
   }
 
   .bottles-btn {
-    padding-left: 3.2rem !important;
+    padding-left: 4rem;
   }
 }
 
