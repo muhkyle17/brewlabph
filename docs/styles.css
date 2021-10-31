@@ -789,6 +789,7 @@ hr {
 }
 
 /* Bottles Kits */
+
 .bottles-product {
   margin-top: 8rem;
   margin-bottom: 3rem;
@@ -874,35 +875,17 @@ hr {
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .ingredients-product {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .ingredients-product-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-
   max-height: 18rem;
   min-width: 20rem;
   margin-left: 2rem;
 }
 
 .ingredients-btn {
-}
-
-@media (max-width: 768px) {
-  .ingredients-product-container {
-    align-items: center;
-  }
-
-  .ingredients-btn {
-    padding-left: 3rem;
-  }
 }
 
 .ingredients-product img {
@@ -914,6 +897,10 @@ hr {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.ingredients-product h3 {
+  margin-top: 1rem;
 }
 
 .ingredients-description h5 {
@@ -931,6 +918,22 @@ hr {
 .ingredients-description strong {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media (max-width: 866px) {
+  .ingredients-product {
+    justify-content: center;
+  }
+
+  .ingredients-product-container {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .ingredients-btn {
+    padding-left: 3rem;
+  }
 }
 
 /* Carboy Product */
