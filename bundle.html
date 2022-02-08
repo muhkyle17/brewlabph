@@ -267,14 +267,7 @@
         </div>
         <hr class="d-none d-md-block" />
         <div
-          class="
-            row
-            justify-content-between
-            align-items-center
-            mb-4 mb-md-5
-            mt-5 mt-md-0
-            footerBar
-          "
+          class="row justify-content-between align-items-center mb-4 mb-md-5 mt-5 mt-md-0 footerBar"
         >
           <div class="col-auto">
             <small class="text-secondary">© BREW LAB PH</small>
@@ -301,33 +294,33 @@
 
     <script type="text/javascript">
       /*<![CDATA[*/
-      (function () {
+      ;(function () {
         var scriptURL =
-          'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js'
         if (window.ShopifyBuy) {
           if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
+            ShopifyBuyInit()
           } else {
-            loadScript();
+            loadScript()
           }
         } else {
-          loadScript();
+          loadScript()
         }
         function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (
+          var script = document.createElement('script')
+          script.async = true
+          script.src = scriptURL
+          ;(
             document.getElementsByTagName('head')[0] ||
             document.getElementsByTagName('body')[0]
-          ).appendChild(script);
-          script.onload = ShopifyBuyInit;
+          ).appendChild(script)
+          script.onload = ShopifyBuyInit
         }
         function ShopifyBuyInit() {
           var client = ShopifyBuy.buildClient({
             domain: 'brew-lab-philippines.myshopify.com',
             storefrontAccessToken: '4c2b3f5c77f179fb8922fba7f688cbcc',
-          });
+          })
           ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
               id: '6907242610846',
@@ -597,10 +590,10 @@
                   },
                 },
               },
-            });
-          });
+            })
+          })
         }
-      })();
+      })()
       /*]]>*/
     </script>
   </body>
